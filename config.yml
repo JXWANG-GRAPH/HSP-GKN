@@ -1,0 +1,97 @@
+dataset:
+  MUTAG:
+    norm: batch_norm
+    norm_attr: True
+    cutoff: 20
+    hidden_paths: 300
+    lr: 0.01
+    l2: 0.001
+    dropout: 0.3
+  NCI1:
+    norm: batch_norm
+    norm_attr: False
+    cutoff: 
+    hidden_paths: 
+    lr: 
+    l2: 
+    dropout: 
+  PTC_MR:
+    norm: batch_norm
+    norm_attr: False
+    cutoff: 22
+    hidden_paths: 200
+    lr: 0.0817
+    l2: 0.0001
+    dropout: 0.0
+  DD:
+    norm: layer
+    norm_attr: False
+    cutoff: 68
+    hidden_paths: 300
+    lr: 0.0015
+    l2: 0.081
+    dropout: 0.15
+  BZR:
+    norm: batch_norm
+    norm_attr: True
+    cutoff: 13
+    hidden_paths: 350
+    lr: 0.0748
+    l2: 0.004
+    dropout: 0.05
+  PROTEINS:
+    norm: batch_norm
+    norm_attr: False
+    cutoff: 58
+    hidden_paths: 400
+    lr: 0.00895
+    l2: 1.618e-5
+    dropout: 0.2
+  ENZYMES:
+    norm: batch_norm
+    norm_attr: False
+    cutoff: 35
+    hidden_paths: 600
+    lr: 0.0037
+    l2: 0.00068
+    dropout: 0.15
+  COLLAB:
+    norm: layer
+    norm_attr: True
+    cutoff:
+    hidden_paths: 700
+    lr: 0.0025
+    l2: 0.0005
+    dropout: 0.4
+  IMDB-BINARY:
+    norm: batch_norm
+    norm_attr: False
+    cutoff:
+    hidden_paths:
+    lr:
+    l2:
+    dropout:
+  IMDB-MULTI:
+    norm: batch_norm
+    norm_attr: False
+    cutoff: 
+    hidden_paths: 300
+    lr: 0.0325
+    l2: 0.00253
+    dropout: 0.2
+  REDDIT-BINARY:
+    norm: batch_norm
+    norm_attr: True
+    cutoff: 20
+    hidden_paths: 500
+    lr: 0.01886
+    l2: 7.24e-5
+    dropout: 0.35
+  REDDIT-MULTI-5K:
+    norm: batch_norm
+    norm_attr: False
+    cutoff: 20
+    hidden_paths: 200
+    lr: 0.2
+    l2: 0.2
+    dropout: 0.2
