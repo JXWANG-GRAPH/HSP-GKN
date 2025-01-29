@@ -1,28 +1,4 @@
 dataset:
-  MUTAG:
-    norm: batch_norm
-    norm_attr: True
-    cutoff: 20
-    hidden_paths: 300
-    lr: 0.01
-    l2: 0.001
-    dropout: 0.3
-  NCI1:
-    norm: batch_norm
-    norm_attr: False
-    cutoff: 
-    hidden_paths: 
-    lr: 
-    l2: 
-    dropout: 
-  PTC_MR:
-    norm: batch_norm
-    norm_attr: False
-    cutoff: 22
-    hidden_paths: 200
-    lr: 0.0817
-    l2: 0.0001
-    dropout: 0.0
   DD:
     norm: layer
     norm_attr: False
@@ -47,14 +23,6 @@ dataset:
     lr: 0.00895
     l2: 1.618e-5
     dropout: 0.2
-  ENZYMES:
-    norm: batch_norm
-    norm_attr: False
-    cutoff: 35
-    hidden_paths: 600
-    lr: 0.0037
-    l2: 0.00068
-    dropout: 0.15
   COLLAB:
     norm: layer
     norm_attr: True
@@ -66,11 +34,11 @@ dataset:
   IMDB-BINARY:
     norm: batch_norm
     norm_attr: False
-    cutoff:
-    hidden_paths:
-    lr:
-    l2:
-    dropout:
+    cutoff: 
+    hidden_paths: 700
+    lr: 0.0526
+    l2: 1.423e-5
+    dropout: 0.15
   IMDB-MULTI:
     norm: batch_norm
     norm_attr: False
@@ -95,3 +63,27 @@ dataset:
     lr: 0.2
     l2: 0.2
     dropout: 0.2
+  MUTAG:
+    norm: batch_norm
+    norm_attr: True
+    cutoff: 5
+    hidden_paths: 600
+    lr: 0.0007
+    l2: 0.0024
+    dropout: 0.4
+  NCI1:
+    norm: batch_norm
+    norm_attr: False
+    cutoff: 38
+    hidden_paths: 600
+    lr: 0.001
+    l2: 1.96e-5
+    dropout: 0.2
+  PTC_MR:
+    norm: batch_norm
+    norm_attr: False
+    cutoff: 30
+    hidden_paths: 200
+    lr: 0.0873
+    l2: 0.0002
+    dropout: 0.05
