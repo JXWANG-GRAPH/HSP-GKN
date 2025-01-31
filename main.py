@@ -13,12 +13,12 @@ import yaml
 
 warnings.filterwarnings("ignore")
 
-seed = 0
-random.seed(seed)
-np.random.seed(seed)
-torch.manual_seed(seed)
-torch.cuda.manual_seed(seed)
-torch.cuda.manual_seed_all(seed)
+# seed = 0
+# random.seed(seed)
+# np.random.seed(seed)
+# torch.manual_seed(seed)
+# torch.cuda.manual_seed(seed)
+# torch.cuda.manual_seed_all(seed)
 
 def train(lr, weight_decay, hid_paths, norm, cutoff, dropout, norm_attr):
     if args.dataset in ('PROTEINS', 'PROTEINS_full', 'ENZYMES', 'SYNTHETIC', 'BZR', 'COX2', 'Synthie', 'DHFR'):
