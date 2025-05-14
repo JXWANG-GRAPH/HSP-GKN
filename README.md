@@ -1,4 +1,4 @@
-Before run, plese nstall the requirements.txt
+Before run, plese install the requirements.txt
 ##Running the experiments:
 
 python main.py --dataset MUTAG  --device cuda:0
