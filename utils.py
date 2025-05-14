@@ -46,7 +46,7 @@ def path_resp_matrix_synthic(G, node_attr):
         if dict_count.get(i, None) is None:
             dict_count[i] = torch.zeros((G.num_nodes(), i), dtype=torch.float32)
 
-    dict_count = dict(sorted(dict_count.items()))  # 路径长度排序
+    dict_count = dict(sorted(dict_count.items()))  
     count_matrix = torch.cat(list(dict_count.values()), dim=1)
     len_distribution = {k: int(v[:, 0].sum().item()) for k, v in dict_count.items()}
 
