@@ -3,3 +3,4 @@ Before run, plese install the requirements.txt
 
 python main.py --dataset MUTAG  --device cuda:0
 
+run optuna_main.py for Hyperparameter selection
